@@ -1,4 +1,4 @@
-baseurl = "https://romantic-hamilton-736ff4.netlify.com/"
+baseURL = "https://romantic-hamilton-736ff4.netlify.com/"
 title = "Arseniy Khvorov"
 copyright = "Code by Arseniy Khvorov. Theme hugo-dusk by Gyorgy Orban."
 languageCode = "en-US"
