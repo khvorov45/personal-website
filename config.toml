@@ -1,0 +1,48 @@
+baseurl = "/"
+title = "Arseniy Khvorov"
+copyright = "Code by Arseniy Khvorov. Theme hugo-dusk by Gyorgy Orban."
+languageCode = "en-US"
+canonifyurls = true
+paginate = 3
+theme = "hugo-dusk"
+enableRobotsTXT = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+googleAnalytics = ""
+disqusShortname = ""
+
+SectionPagesMenu = "main"
+
+# use Chroma for syntax highlight
+pygmentsStyle = "native" # other dark style options: vim, fruity, monokai
+# enable syntax highlight for code blocks
+pygmentsCodeFences = true
+
+[[menu.main]]
+  name = "Posts"
+  weight = -120
+  identifier = "post"
+  url = "/post/"
+
+[[menu.main]]
+  name = "Categories"
+  weight = -110
+  identifier = "category"
+  url = "/categories/"
+
+[taxonomies]
+  category = "categories"
+
+[author]
+  name = "Arseniy Khvorov"
+
+[params.meta]
+  keywords = ""
+  description = "Personal blog."
+
+[params]
+  #email = "khvorov45@gmail.com"
+  #github = "khvorov45"
+  #gitlab = "gitlab id"
+  #linkedin = "linkedin id"
+  theme_colors = "default-dark"
