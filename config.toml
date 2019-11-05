@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Arseniy Khvorov"
 theme = "hugo-dusk"
+copyright = "Code by Arseniy Khvorov. Theme hugo-dusk by Gyorgy Orban"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
