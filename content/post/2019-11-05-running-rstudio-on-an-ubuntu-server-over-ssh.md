@@ -1,7 +1,7 @@
 ---
 title: Running RStudio on an Ubuntu server over SSH
 author: Arseniy Khvorov
-date: '2019-11-05'
+date: '2019-11-06'
 slug: running-rstudio-on-an-ubuntu-server-over-ssh
 categories:
   - ubuntu-server
@@ -11,11 +11,31 @@ categories:
 
 RStudio server listens to port 8787 while it's running on the server.
 
-We need to establish an SSH tunnel from a local port (e.g. 1234) to the remote server's port 8787.
+We need to establish an SSH tunnel from a local port to the remote server's port 8787.
 
-Once that's done (instructions below), open a web browser, type it `localhost:yyyy` where `yyyy` is a local port the tunnel's been set up to forward to (e.g. 1234). RStudio login page will greet you. Use you server's username and password.
+Once that's done, RStudio can be accessed at `localhost:yyyy` where `yyyy` is the local port (detailed instructions below).
 
-## Open SSH (linux, mac, windows 10)
+## Check server status
+
+While logged into the server
+
+```
+rstudio-server status
+```
+
+To start
+
+```
+rstudio-server start
+```
+
+To stop
+
+```
+rstudio-server stop
+```
+
+## Tunnel with open SSH (linux, mac, windows 10)
 
 Execute in terminal (e.g. powershell on windows)
 
@@ -29,9 +49,7 @@ Where `1234` is the local port, `8787` is the remote port, `username` is the use
 
 `-f` and `-N` make ssh go into background. Without them you will also login to the server through the terminal (in addition to establishing the tunnel) but note that the tunnel will only live for as long as your terminal session does (since ssh is not in the background). Also note that these options work on windows but the terminal hangs, so you have to mercy-kill it (it won't kill the tunnel).
 
-Open a web browser, type in `localhost:1234`
-
-## Putty (windows)
+## Tunnel with Putty (windows)
 
 * Session (Basic options for your PuTTY session)
 
@@ -47,4 +65,6 @@ Open a web browser, type in `localhost:1234`
 
 Once you open the session, the tunnel will be established. The tunnel will disappear once the Putty session ends.
 
-Open a web browser, type in `localhost:1234`
+## Access the RStudio interface
+
+Once a tunnel is established, open a web browser, type `localhost:1234` in the address bar. Use your server's username and password.
