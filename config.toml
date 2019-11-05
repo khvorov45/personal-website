@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://akhvorov.rbind.io/"
 languageCode = "en-us"
 title = "Arseniy Khvorov"
 theme = "hugo-dusk"
