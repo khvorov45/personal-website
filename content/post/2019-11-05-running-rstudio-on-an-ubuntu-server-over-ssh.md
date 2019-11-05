@@ -17,6 +17,8 @@ Once that's done (instructions below), open a web browser, type it `localhost:yy
 
 ## Open SSH (linux, mac, windows 10)
 
+Execute in terminal (e.g. powershell on windows)
+
 ```
 ssh -f -N -L 1234:localhost:8787 username@xxx.xx.xxx.xx
 ```
