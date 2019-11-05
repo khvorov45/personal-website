@@ -1,7 +1,7 @@
 ---
 title: Running RStudio on an Ubuntu server over SSH
 author: Arseniy Khvorov
-date: '2019-11-06'
+date: '2019-11-05'
 slug: running-rstudio-on-an-ubuntu-server-over-ssh
 categories:
   - ubuntu-server
