@@ -54,13 +54,13 @@ Where `1234` is the local port, `8787` is the remote port, `username` is the use
 * Session (Basic options for your PuTTY session)
 
   * Host Name: `username@xxx.xx.xxx.xx` where `username` is the username you use to login to the server and `xxx.xx.xxx.xx` is the server's IP address.
-  
+
   * Connection type: ssh
-  
+
 * Connection-SSH-Tunnels (Options controlling SSH port forwarding)
 
   * Source port: `1234`
-  
+
   * Destination: `xxx.xx.xxx.xx:8787` where `xxx.xx.xxx.xx` is the server's IP address
 
 Once you open the session, the tunnel will be established. The tunnel will disappear once the Putty session ends.
